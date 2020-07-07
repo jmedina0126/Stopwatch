@@ -3,9 +3,8 @@
 }
 body, html {
     margin: 0;
-    background: #abbaab;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ececec;
+    color: #353535;
 }
 
 h1 {
@@ -28,7 +27,7 @@ h1 {
 
 #display {
     text-align: center;
-    font-size: 4em;
+    font-size: 5em;
 }
 
 .btn-container {
@@ -36,18 +35,20 @@ h1 {
 }
 .btn {
     margin: 1em;
-    height: 3em;
-    width: 6em;
-    font-size: 1.5em;
+    height: 3.5em;
+    width: 7em;
+    font-size: 2em;
     font-weight: 600;
     background: none;
-    border: none;
+    border: 8px solid #ececec;
+    outline: none;
     cursor: pointer;
 }
 .neumorphic-shadows {
     border-radius: 25px;
-    box-shadow: -6px -6px 23px #fff, 10px 10px 23px #abbaab;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5), 10px 10px 15px rgba(70,70,70,0.12);
 }
 .neumorphic-shadows:active {
-    box-shadow: -6px -6px 23px 10px #fff, 10px 10px 23px #abbaab;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5), 10px 10px 15px rgba(70,70,70,0.12),
+    inset -10px -10px 15px rgba(255,255,255,0.5), inset 10px 10px 15px rgba(70,70,70,0.12);
 }
